@@ -1,0 +1,72 @@
+button {
+    border-color: #e9eaec;
+    border-style: solid;
+    border-radius: .5em;
+    flex: 1 1 auto;
+    font-weight: bold;
+    padding: .5%;
+}
+
+#buttons {
+    flex-direction: column;
+}
+
+#calculator {
+    align-items: stretch;
+    background-color: #241F25;
+    border-radius: .5em;
+    flex-direction: column;
+    height: 35vh;
+    min-height: 200px;
+    max-height: 600px;
+    max-width: 300px;
+    min-width: 200px;
+    padding: .5em;
+    width: 40vw;
+}
+
+.calculatorDiv {
+    align-items: stretch;
+    display: flex;
+    flex: 1 1 auto;
+    gap: .2em;
+    justify-content: stretch;
+}
+
+#clearButton {
+    background-color: #d98526;
+    color: #dcdde0;
+}
+
+#display{
+    align-items: center;
+    background-color: #d4d5d8;
+    border-radius: .5em;
+    flex: 1 1 auto;
+    height: 25px;
+    justify-content: center;
+    padding: 5% 0 5% 0;
+    width: 100%;
+}
+
+.displayText {
+    color: #18191b;
+    display: flex;
+    flex: 1 1 auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+}
+
+#numbers {
+    flex-direction: column;
+}
+
+.numberButton {
+    background-color: #51525d;
+    color: #dcdde0;
+}
+
+.operatorButton {
+    background-color: #747781;
+    color: #dcdde0;
+}
