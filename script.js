@@ -32,5 +32,16 @@ function divide(firstNumber, secondNumber) {
 
 function operate(operator, firstNumber, secondNumber) {
     let answer;
-
-}
+    if(operator === "*") {
+        answer = multiply(firstNumber, secondNumber);
+    } else if(operator === "/") {
+        answer = divide(firstNumber, secondNumber);
+    } else if(operator === "+") {
+        answer = add(firstNumber, secondNumber);
+    } else if(operator === "-") {
+        answer = subtract(firstNumber, secondNumber);
+    } else {
+        answer = operator + " isn't a valid operator. You\'d better try that again"
+    };
+    return answer;
+};
