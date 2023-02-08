@@ -1,7 +1,24 @@
+body {
+    align-items: center;
+    background-color: #D2DDFE;
+    background-image: url("images/WordItOut-word-cloud-5265254.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
 button {
+    background-color: #747781;
     border-color: #e9eaec;
     border-style: solid;
     border-radius: .5em;
+    color: #f4f4f5;
     flex: 1 1 auto;
     font-weight: bold;
     padding: .5%;
@@ -11,18 +28,21 @@ button {
     flex-direction: column;
 }
 
+#buttons .inactiveButton {
+    color: #a6a9b0;
+}
+
 #calculator {
     align-items: stretch;
     background-color: #241F25;
     border-radius: .5em;
+    flex: 0 1 auto;
     flex-direction: column;
-    height: 35vh;
-    min-height: 200px;
-    max-height: 600px;
+    height: 50vh;
     max-width: 300px;
-    min-width: 200px;
+    min-height: 300px;
     padding: .5em;
-    width: 40vw;
+    width: 60vw;
 }
 
 .calculatorDiv {
@@ -33,9 +53,10 @@ button {
     justify-content: stretch;
 }
 
-#equals {
-    background-color: #d98526;
-    color: #dcdde0;
+.contentHolder {
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 #display{
@@ -49,12 +70,15 @@ button {
     width: 100%;
 }
 
-.displayText {
+#displayText {
+    align-items: center;
     color: #18191b;
     display: flex;
     flex: 1 1 auto;
     font-family: 'Courier New', Courier, monospace;
     font-size: x-large;
+    font-weight: bold;
+    justify-content: center;
 }
 
 #numbers {
@@ -66,7 +90,7 @@ button {
     color: #dcdde0;
 }
 
-.operatorButton {
-    background-color: #747781;
+.numberRow .equals {
+    background-color: #d98526;
     color: #dcdde0;
 }

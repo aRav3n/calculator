@@ -9,38 +9,40 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div id="calculator" class="calculatorDiv">
-        <div id="display" class="calculatorDiv">
-            <p id="displayText">1 + 1</p>
-        </div>
-        <div id="buttons" class="calculatorDiv">
-            <div id="operators" class="calculatorDiv">
-                <button id="multiply" class="operatorButton">x</button>
-                <button id="divide" class="operatorButton">/</button>
-                <button id="add" class="operatorButton">+</button>
-                <button id="subtract" class="operatorButton">-</button>
-                <button id="clearButton" class="operatorButton">AC</button>
+    <div class="contentHolder">
+        <div id="calculator" class="calculatorDiv">
+            <div id="display" class="calculatorDiv">
+                <p id="displayText">1 + 1</p>
             </div>
-            <div id="numbers" class="calculatorDiv">
-                <div class="numberRow calculatorDiv">
-                    <button class="numberButton">1</button>
-                    <button class="numberButton">2</button>
-                    <button class="numberButton">3</button>
+            <div id="buttons" class="calculatorDiv">
+                <div id="operators" class="calculatorDiv">
+                    <button class="inactiveButton multiply operatorButton">x</button>
+                    <button class="divide inactiveButton operatorButton">&#xf7;</button>
+                    <button class="add inactiveButton operatorButton">+</button>
+                    <button class="inactiveButton operatorButton subtract">-</button>
+                    <button id="clear">AC</button>
                 </div>
-                <div class="numberRow calculatorDiv">
-                    <button class="numberButton">4</button>
-                    <button class="numberButton">5</button>
-                    <button class="numberButton">6</button>
-                </div>
-                <div class="numberRow calculatorDiv">
-                    <button class="numberButton">7</button>
-                    <button class="numberButton">8</button>
-                    <button class="numberButton">9</button>
-                </div>
-                <div class="numberRow calculatorDiv">
-                    <button class="numberButton">0</button>
-                    <button id="decimalButton" class="numberButton">.</button>
-                    <button id="equals" class="operatorButton">=</button>
+                <div id="numbers" class="calculatorDiv">
+                    <div class="numberRow calculatorDiv">
+                        <button class="numberButton">1</button>
+                        <button class="numberButton">2</button>
+                        <button class="numberButton">3</button>
+                    </div>
+                    <div class="numberRow calculatorDiv">
+                        <button class="numberButton">4</button>
+                        <button class="numberButton">5</button>
+                        <button class="numberButton">6</button>
+                    </div>
+                    <div class="numberRow calculatorDiv">
+                        <button class="numberButton">7</button>
+                        <button class="numberButton">8</button>
+                        <button class="numberButton">9</button>
+                    </div>
+                    <div class="numberRow calculatorDiv">
+                        <button class="numberButton">0</button>
+                        <button class="decimalButton numberButton">.</button>
+                        <button class="equals inactiveButton operatorButton">=</button>
+                    </div>
                 </div>
             </div>
         </div>
